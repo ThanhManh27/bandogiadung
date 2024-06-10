@@ -1,0 +1,55 @@
+.toanboweb {
+    background-color: #303030;
+    padding: auto;
+    margin: auto;
+}
+
+.boxcenter{
+    width: 50%;
+    margin: 0 980px;
+    color: black;
+}
+
+.gachngang {
+    padding: 2px;
+    background-color: white;
+    color: black;
+    width: 1800px;
+    margin: 10px auto;
+}
+
+.text {
+    font-family:monospace;
+    background-color: #303030;
+}
+.list-group{
+    color: #303030 ;
+}
+@keyframes running-text {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.running-text-container {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: running-text 10s linear infinite;
+    font-family:'Times New Roman', Times, serif;
+}
+.container-fluid{
+    background-color: #303030;
+    margin: 0 auto;
+    float: right;
+    color: #303030;
+}
+.nav-two{
+    margin: 0 50px;
+    
+}
+.nav-one{
+    margin: 0 20px;
+}
+.navbar-brand{
+    margin: 0 20px;
+}
+

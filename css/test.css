@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#search-box {
+    background-color: white;
+    border-radius: 40px;
+}
+
+#search-box #search-text {
+    border: none;
+    outline: none;
+    background-color: none;
+    padding: 0;
+    font-size: 18px;
+    width: 0;
+    transition: all 0.65s ease-in-out;
+
+}
+
+#search-box:hover #search-text,
+#search-box:hover #search-text:valid {
+    width: 300px;
+    margin: 4px;
+}
+
+#search-box #search-btn {
+    background-color: white;
+    cursor: pointer;
+    border: 300px;
+    padding: 15px 15px;
+    border-radius: 50%;
+}

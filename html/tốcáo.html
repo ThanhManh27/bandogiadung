@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mạnh shop - nơi bán đồ gia dụng uy tín</title>
+
+    <link rel="stylesheet" href="../css/test2.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <style>
+        .container1 {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toanboweb">
+        <div class="ml">
+            <header class="headerr">
+                <nav class="container-fluid">
+                    <div>
+                        <h2><a href="../html/trangchu.html" id="logo"><img src="../img/chibi.gif" alt=""></a></h2>
+                    </div>
+                    <ul id="main-menu">
+                        <li>
+                            <a href="../html/test2.html">
+                                <h2>Trang chủ</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../html/gioithieu.html">
+                                <h2>Giới thiệu</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../html/troll.html">
+                                <h2>Sản phẩm</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://vnexpress.net/tag/do-gia-dung-93968">
+                                <h2>Tin tức</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../html/lienhe.html">
+                                <h2>Liên hệ</h2>
+                            </a>
+                        </li>
+                    </ul>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                   
+
+                </nav>
+            </header>
+        </div>
+    </div>
+    <section>
+        <div class="container1">
+            <h1>Tố cáo</h1>
+            <form id="reportForm">
+                <label for="reporterName">Tên của bạn:</label>
+                <input type="text" id="reporterName" name="reporterName" required>
+
+                <label for="reportSubject">Tiêu đề tố cáo:</label>
+                <input type="text" id="reportSubject" name="reportSubject" required>
+
+                <label for="reportDetails">Chi tiết tố cáo:</label>
+                <textarea id="reportDetails" name="reportDetails" required></textarea>
+
+                <button type="submit">Gửi tố cáo</button>   
+            </form>
+        </div>
+
+        <script>
+            const reportForm = document.getElementById('reportForm');
+
+            reportForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const formData = new FormData(this);
+                const formDataJson = {};
+                formData.forEach((value, key) => { formDataJson[key] = value });
+                console.log('Dữ liệu tố cáo:', formDataJson);
+                // Gửi dữ liệu tố cáo đến máy chủ hoặc thực hiện các hành động khác ở đây
+                // Ví dụ: fetch('url_may_chu', { method: 'POST', body: JSON.stringify(formDataJson) })
+            });
+        </script>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Thông tin</h3>
+                <ul>
+                    <li><a href="#">Hỗ trợ</a></li>
+                    <li><a href="#">Hỏi đáp nhanh</a></li>
+                    <li><a href="#">Đơn hàng</a></li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                    <li><a href="#">Tài liệu hướng dẫn</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Liên kết hữu ích</h3>
+                <ul>
+                    <li><a href="#">Cao Đẳng Công Nghệ Thông Tin</a></li>
+                    <li><a href="#">
+                            <p>Điện thoại: 0764240084</p>
+                        </a></li>
+                    <li><a href="#">
+                            <p>Email: manhngo700@gmail.com</p>
+                        </a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+        footer {
+            background-color: #0e0d0d;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            width: 100%;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+      
+        }
+        .footer-section {
+            flex: 1 1 25%;
+            text-align: left;
+            margin-bottom: 20px;
+            margin-left: -200px;
+            padding: 10px -20px;
+        }
+        .footer-section h3 {
+            margin: auto;
+            color: darkorange;
+            padding: 10px;
+            
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 10px;
+            margin: 5px auto;
+            color: darkorange;
+        }
+        .footer-section ul li {
+            margin-bottom: 10px;
+            color: darkorange;
+        }
+        .footer-section ul li:last-child {
+            margin-bottom: 0;
+        }
+        .footer-section a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+        .footer-sectionone{
+           margin: 0 220px;
+           padding: 0;
+            
+        }
+        .footer-form {
+            flex: 1 1 50%;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .footer-form h3{
+            color: darkorange;
+        }
+        .footer-form input,.footer-form textarea,.footer-form button {
+            width: calc(70% - 80px);
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            background-color: #555;
+            color: #fff;
+        }
+        .footer-form button {
+            width:61.5%;
+            background-color: #007bff;
+            cursor: pointer;
+            
+        }
+        .footer-form button:hover{
+            background-color: orange;
+            transition: 1s;
+        }

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mạnh shop - nơi bán đồ gia dụng uy tín</title>
+
+    <link rel="stylesheet" href="../css/test2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/kobietnoij.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../js/cart.js">
+    <style>
+        .container2 {
+            display: flex;
+            border: 1px solid gray;
+            justify-content: center;
+            align-items: center;
+            margin: 60px auto;
+            max-width: 1300px;
+            height: 200px;
+        }
+
+        .left-column {
+            flex: 1.2;
+        }
+
+        .logo {
+            max-width: 43%;
+            height: auto;
+            border-radius: 75px;
+            margin-top: -15px;
+            margin: 0px 20px
+        }
+
+        .right-columns {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            font-size: 19px;
+
+        }
+
+        .p {
+            margin: 2px 10px;
+            color: red;
+        }
+
+        .content {
+            float: right;
+            font-size: 19px;
+            /* Đảo ngược thứ tự của các phần tử con */
+            margin-right: 50px;
+        }
+
+        .chatngay {
+            text-decoration: none;
+            background-color: rgb(235, 149, 149);
+            color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+            padding: 12px;
+
+        }
+
+        .cart {
+            background-color: rgb(235, 200, 200);
+            font-size: 17px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="toanboweb">
+        <div class="ml">
+            <header class="headerr">
+                <nav class="container-fluid">
+                    <div>
+                        <h2><a href="../html/trangchu.html" id="logo"><img src="../img/chibi.gif" alt=""></a></h2>
+                    </div>
+                    <ul id="main-menu">
+                        <li>
+                            <a href="../html/test2.html">
+                                <h2>Trang chủ</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../html/gioithieu.html">
+                                <h2>Giới thiệu</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../html/troll.html">
+                                <h2>Sản phẩm</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../html/tintuc.html">
+                                <h2>Tin tức</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../html/lienhe.html">
+                                <h2>Liên hệ</h2>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <form action="" id="search-box" class="search">
+                        <input type="text" id="search-text" placeholder="bạn muốn tìm gì?" required>
+                        <button id="search-btn"><i class="fa-solid fa-magnifying-glass fa-beat"></i></button>
+                    </form>
+
+                    <a href="../html/Login.html"><button class="user"><i class="fa-solid fa-user fa-sm"
+                                style="color: #fafafa; font-size: 27px; display: flex; margin-top: 30px;"></i></button></a>
+                    <div class="cart-icon">
+                        <p style="color: #fafafa;font-size: 22px;margin-top: 16px;margin: 16px 20px;"><i
+                                class="fa-solid fa-cart-shopping" style="color:white; "></i>
+                            <span>0</span><sup>VND</sup>
+                            
+                        </p>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </div>
+    <section>
+
+        <div class="container">
+            <div class="product-items">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="../img/chảo.jpg" alt="" style="width: 400px; height: 400px; margin-left: 50px;">
+                    </div>
+
+                    <div>
+                        <div class="chữ">
+                            <h2 class="product-title">Chảo inox </h2>
+                            <p>
+                                <br>
+                                <u class="product-price">4.9</u>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span> | <u class="danhgia">16k</u> Đánh giá | Đã bán : <u
+                                    class="daban"> 18.7k </u> <a href="../html/tốcáo.html"><u class="report">Tố
+                                        cáo</u></a>
+                                <hr><br>
+                            </p>
+                            <div class="font1">
+                                <p id="product-description">Mô tả sản phẩm:
+                                    - Chất liệu inox 201
+                                    - Có 2 quai cầm chắc chắn đảm bảo trong bưng bê
+                                    - Phi 60cm </p>
+                                <br>
+                                <p> Đặc điểm của chảo inox:
+
+                                    - Chất liệu inox: Chảo inox được làm từ thép không gỉ chất lượng cao (inox) để đảm
+                                    bảo
+                                    tính bền bỉ và khả năng chống gỉ rỉ tốt. Inox có bề mặt bóng bẩy và dễ dàng làm
+                                    sạch.
+
+                                    - Đáy chảo: Chảo inox có đáy dày, giúp trải nhiệt đều và giữ nhiệt tốt hơn, làm cho
+                                    việc
+                                    nấu ăn đồng đều hơn.
+
+                                    - Tay cầm và nút nắp: Được làm từ cùng chất liệu inox hoặc các chất liệu chịu nhiệt
+                                    khác
+                                    để đảm bảo an toàn khi sử dụng.
+
+                                    - Bề mặt bóng bẩy: Bề mặt inox được mài bóng để tạo vẻ đẹp và sự tinh tế cho sản
+                                    phẩm.
+                                </p>
+                            </div>
+                            <br>
+                            <p id="productDetailPrice" class="font1">Giá bán: 650.000đ</p>
+                            <br>
+                                    <div class="product-item-text">
+                                        <button class="button">Thêm vô giỏ Hàng</button>
+                                        <button class="buy-now-button">Mua ngay</button>
+                                    </div>
+                    </div>
+                        <br>
+                        <p class="chiase">Chia sẻ : <i class="fa-brands fa-facebook"></i> <i
+                                class="fa-brands fa-facebook-messenger"></i> <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i> | <i class="fa-regular fa-heart fa-lg"
+                                style="color: #ff00c8;"></i> Đã Thích(11.8k)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+        <div class="container2">
+            <div class="left-column">
+                <div>
+                    <p class="content">Shop Mạnh
+                        <br>
+                        <br>
+
+                        <button class="chatngay"><i class="fa-solid fa-comment-dots" style="color: #ff0000;"></i> Chat
+                            ngay</button>
+                    </p>
+
+                    <img src="../img/200w.gif" alt="Hình ảnh" class="logo">
+                </div>
+            </div>
+            <div class="right-columns">
+                <div class="column">Đánh giá <p class="p">1.1k</p> | Tỷ lệ phản hồi <p class="p">79%</p> | Tham gia <p
+                        class="p">5 năm trước</p>
+                </div>
+                <div class="column">Sản phẩm <p class="p">540</p> | Thời Gian Phản Hồi <p class="p">Trong vài giờ </p>
+                    Người theo dỗi <p class="p">
+                        5.3k</p>
+                </div>
+
+            </div>
+        </div>
+        <section class="cart">
+            <i class="fa-solid fa-xmark fa-lg" style="color: #000000; font-size: 40px;"></i>
+            <h2>Giở hàng của bạn</h2>
+            <form action="">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tên sản phẩm</th>
+                            <th>Giá</th>
+                            <th>SL</th>
+                            <th>Xóa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--   <tr>
+                            <td style="display: flex; align-items: center;"><img style="width: 50%;height: 190px" src="../img/goku.gif" alt="">iphone6</td>
+                            <td><span><p><span>320.000</span><sup>VND</sup></p></span></td>
+                            <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                            <td style="cursor: pointer;">xoa</td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex; align-items: center;"><img style="width: 50%;height: 190px" src="../img/goku.gif" alt="">iphone6</td>
+                            <td><span><p><span>320.000</span><sup>VND</sup></p></span></td>
+                            <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                            <td style="cursor: pointer;">xoa</td>
+                        </tr>-->
+                    </tbody>
+                </table>
+                <div style="text-align: right;" class="price-total">
+                    <p style="font-weight: bold;"> Tổng tiền:<span>0</span><sup>VND</sup></p>
+                </div>
+                <button>Đặt hàng</button>
+            </form>
+        </section>
+    </div>
+</body>
+
+<script src="../js/cart.js"></script>
+
+<script src="../js/cart2.js"></script>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <style>
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            padding: 200px;
+
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 0px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: box-shadow 0.03s;
+        }
+
+        .product:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50px;
+            margin-bottom: 10px;
+            transition: transform 0.75s;
+        }
+
+        .product:hover img {
+            transform: scale(1.1);
+        }
+
+        .product h3 {
+            margin-top: 10px;
+        }
+
+        .product p {
+            margin: 10px 0px;
+        }
+
+        .product-description {
+            height: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .product-discount {
+            color: red;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-stock {
+            color: #28a745;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-buttons {
+            position: relative;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: bottom 0.75s;
+        }
+
+        .product:hover .product-buttons {
+            bottom: 20px;
+        }
+
+        .product-buttons a {
+
+            padding: 8px 8px;
+            border: none;
+            border-radius: 5px;
+            background-color: black;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .product-buttons a:hover {
+            background-color: darkorange;
+        }
+
+        /* Hiệu ứng chuyển ảnh */
+        .product:hover img {
+            transform: translateY(50px);
+        }
+    </style>
+</head>
+
+<body>
+
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const addToFavoritesButtons = document.querySelectorAll('.add-to-favorites');
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    alert('Sản phẩm đã được thêm vào giỏ hàng!');
+                    // Thêm logic xử lý thêm sản phẩm vào giỏ hàng ở đây
+                });
+            });
+
+            addToFavoritesButtons.forEach(button => {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    alert('Sản phẩm đã được thêm vào danh sách yêu thích!');
+                    // Thêm logic xử lý thêm sản phẩm vào danh sách yêu thích ở đây
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
